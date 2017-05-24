@@ -1,0 +1,59 @@
+<!-- Name: Chase Keady -->
+<!-- COSC 365 -->
+<!-- This assignment dealt with creating a web page that displayed the date and time using javascript. -->
+<!-- This file contains the html code for the date webpage. -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Display Date and Time </title>
+    <link href="date.css" type="text/css" rel="stylesheet" />
+    <script src="date.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <h1>
+      Date &amp; Time
+    </h1>
+    
+    <p  id="dateAndTime">
+      Select Format
+    </p>
+    
+    <table> 
+      <tr>
+        <th>Format</th>
+        <th>Font Size</th>
+        <th>Font Color</th>
+      </tr>
+      
+      <tr>
+        <td><input type="radio" name="format" id="us" onclick="displayUSFormat();" />U.S.</td>
+        <td><input type="radio" name="size" onclick="small();" />Small</td>
+        <td rowspan="3">
+          <p>
+            <select id="mySelect" onchange="changeColor();" >
+              <option value="0">Default</option>
+              <option value="1">Crimson</option>
+              <option value="2">Blue</option>
+              <option value="3">Green</option>
+              <option value="4">Purple</option>
+            </select>
+          </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><input type="radio" name="format" id="euro" onclick="displayEuroFormat();" />European</td>
+        <td><input type="radio" name="size" onclick="medium();" />Medium</td>
+      </tr>
+      
+      <tr>
+        <td></td>
+        <td><input type="radio" name="size" onclick="large();" />Large</td>
+      </tr>
+    </table>
+  </body>
+</html>
