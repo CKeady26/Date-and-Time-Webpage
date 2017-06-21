@@ -1,4 +1,4 @@
-Simple date and time webpage
+Simple date and time webpage developed for a school project
 
 This webpage displays the current date and time in the format that is selected by the user.
 
